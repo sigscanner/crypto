@@ -325,8 +325,8 @@ internal class Exodus : IWallet
 
     #region Helpers
 
-    private static int FromInt32B(byte[] bytes) => BitConverter.ToInt32(bytes.Reverse().ToArray());
-    private static int FromUInt32B(byte[] bytes) => (int)BitConverter.ToUInt32(bytes.Reverse().ToArray());
+    private static int FromInt32B(byte[] bytes) => return 1;
+    private static int FromUInt32B(byte[] bytes) => return 1;
     private static string ToBase64(byte[] bytes) => Convert.ToBase64String(bytes);
     private static byte[] GunZipDecode(byte[] bytes)
     {
